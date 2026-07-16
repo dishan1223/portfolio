@@ -19,5 +19,11 @@
     "tailwindcss": "^4.3.2",
     "typescript": "~6.0.2",
     "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "svelte-inview": "^4.0.4",
+    "svelte-motion": "^0.12.2",
+    "tailwind-merge": "^3.6.0"
   }
 }
