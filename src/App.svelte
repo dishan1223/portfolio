@@ -4,6 +4,19 @@ import Stack from "./components/Stack.svelte";
 import WorkItem from "./components/WorkItem.svelte";
 import BlurFade from "./components/BlurFade.svelte";
 import NumberTicker from "./components/NumberTicker.svelte";
+import { slotText } from "slot-text/svelte";
+import "slot-text/style.css";
+
+let copied = false
+
+function copyEmail() {
+  const email = "dishanishtiaq45@gmail.com"; // Replace with your actual email
+  navigator.clipboard.writeText(email);
+  copied = true;
+  setTimeout(() => {
+    copied = false;
+  }, 2000);
+}
 
 function bangladeshTime(): string {
   return new Intl.DateTimeFormat("en-US", {
@@ -50,7 +63,7 @@ const works = [
 <main class="mx-auto w-[90%] max-w-[560px] mb-10 page-reveal">
 
   <BlurFade>
-    <h1 class="mt-[50px] lg:mt-[100px] font-medium">Ishtiaq Dishan</h1>
+    <h1 class="mt-[50px] lg:mt-[100px] font-medium name">Ishtiaq Dishan</h1>
   </BlurFade>
   <BlurFade>
     <p class="opacity-50">Updated <NumberTicker value={16}/> Jul <NumberTicker value={2026} /></p>
@@ -61,7 +74,7 @@ const works = [
 
     <p class="mt-6">I've built products like <a href="https://www.studify.sbs/"><span class="link">Studify</span></a> and <a href="https://www.bdsaaszone.site/"><span class="link">BD SaaS Zone</span></a>, and I'm currently working on <a href="https://github.com/dishan1223/mutt"><span class="link">Mutt</span></a>, an open-source project. I'm always excited to build useful and enjoyable software while exploring new tools, technologies, and ideas. Beyond coding, I enjoy connecting with experienced developers, learning from their insights, and continuously improving my craft.</p>
 
-    <p class="mt-6">Feel free to say hi on <a href="https://github.com/dishan1223"><span class="link">GitHub</span></a>, <a href="https://x.com/ishtiaqdishan"><span class="link">X</span></a>, <a href="https://www.facebook.com/ishtiaq.dishan"><span class="link">Facebook</span></a>, or <a href="mailto:dishanishtiaq45@gmail.com"><span class="link">email</span></a> if you'd like to connect.</p>
+    <p class="mt-6">Feel free to say hi on <a href="https://github.com/dishan1223"><span class="link">GitHub</span></a>, <a href="https://x.com/ishtiaqdishan"><span class="link">X</span></a>, <a href="https://www.facebook.com/ishtiaq.dishan"><span class="link">Facebook</span></a>, or <button onclick={copyEmail}><span class="link" use:slotText={{text: copied ? "Copied" : "email"}}>email</span></button> if you'd like to connect.</p>
   </BlurFade>
 
   <BlurFade>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -17,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.name{
+  font-family: "Geist Mono", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
 .link{
   border-bottom: 1px solid rgb(0 0 0 / 0.3);
   transition: border-color 0.2s ease, opacity 0.2s ease;
