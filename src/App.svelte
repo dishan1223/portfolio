@@ -74,7 +74,7 @@ const works = [
 
     <p class="mt-6">I've built products like <a href="https://www.studify.sbs/"><span class="link">Studify</span></a> and <a href="https://www.bdsaaszone.site/"><span class="link">BD SaaS Zone</span></a>, and I'm currently working on <a href="https://github.com/dishan1223/mutt"><span class="link">Mutt</span></a>, an open-source project. I'm always excited to build useful and enjoyable software while exploring new tools, technologies, and ideas. Beyond coding, I enjoy connecting with experienced developers, learning from their insights, and continuously improving my craft.</p>
 
-    <p class="mt-6">Feel free to say hi on <a href="https://github.com/dishan1223"><span class="link">GitHub</span></a>, <a href="https://x.com/ishtiaqdishan"><span class="link">X</span></a>, <a href="https://www.facebook.com/ishtiaq.dishan"><span class="link">Facebook</span></a>, or <button onclick={copyEmail}><span class="link" use:slotText={{text: copied ? "Copied" : "email"}}>email</span></button> if you'd like to connect.</p>
+    <p class="mt-6">Feel free to say hi on <a href="https://github.com/dishan1223"><span class="link">GitHub</span></a>, <a href="https://x.com/ishtiaqdishan"><span class="link">X</span></a>, <a href="https://www.facebook.com/ishtiaq.dishan"><span class="link">Facebook</span></a>, or <button onclick={copyEmail}><span class="link" use:slotText={{text: copied ? "Copied" : "Email"}}>email</span></button> if you'd like to connect.</p>
   </BlurFade>
 
   <BlurFade>

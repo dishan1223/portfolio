@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "cuelume": "^0.1.2",
     "slot-text": "^0.3.3",
     "svelte-inview": "^4.0.4",
     "svelte-motion": "^0.12.2",
